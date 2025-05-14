@@ -30,3 +30,54 @@
         width:1170px;
     }
 }
+body{
+    background-color: rgb(41, 212, 41);
+}
+.content{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .container{
+    text-align: center;
+}
+.content .container h1{
+    font-size: 40px;
+    color: rgb(250, 218, 34);
+    font-weight: bold;
+}
+.content .container h2{
+    margin: 25px 0;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.content .container #cards,
+.content .container #sum{
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content .container .btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content .container .btns button{
+    width: 200px;
+    border: none;
+    border-radius: 6px;
+    background-color:rgb(250, 218, 34) ;
+    color: rgb(41, 212, 41);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    margin: 15px 0;
+}
+.content .container p:last-child{
+    color:white
+}
