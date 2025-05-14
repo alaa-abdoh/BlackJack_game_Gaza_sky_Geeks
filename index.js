@@ -30,4 +30,22 @@ function startGame(){
     let secondCard= getRandomCard();
     cards=[firstCard, secondCard];
     sum= firstCard + secondCard;
+    renderGame();
+}
+
+function renderGame(){
+    for(let i=0; i<cards.length; i++)
+        cardsEle.innerHTML+=`${cards[i]} `
+    sumEle.innerHTML+=sum;
+    if(sum <= 20)
+        msg="Do You want to draw a new card ?"
+    else if(sum === 21){
+        msg= "You have got BlackJack!"
+        hasBlackJack= true;
+    }
+    else{
+        msg= "You are out of the game!"
+        isAlive= false
+    }
+    messageEle.innerHTML=msg;
 }
