@@ -49,3 +49,12 @@ function renderGame(){
     }
     messageEle.innerHTML=msg;
 }
+
+function newCard(){
+    if(isAlive && !hasBlackJack){
+        let card= getRandomCard();
+        sum += card;
+        cards.push(card);
+        renderGame();
+    }
+}
