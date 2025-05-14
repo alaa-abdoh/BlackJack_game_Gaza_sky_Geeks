@@ -34,8 +34,10 @@ function startGame(){
 }
 
 function renderGame(){
+     cardsEle.innerHTML="Cards: "
     for(let i=0; i<cards.length; i++)
         cardsEle.innerHTML+=`${cards[i]} `
+    sumEle.innerHTML="Sum: "
     sumEle.innerHTML+=sum;
     if(sum <= 20)
         msg="Do You want to draw a new card ?"
